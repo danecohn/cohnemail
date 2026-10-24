@@ -1,0 +1,10 @@
+{
+  "name": "cohn-email",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "The Cohn family's Golden Gate desktop on the web",
+  "scripts": { "start": "node server.mjs", "dev": "node --watch server.mjs", "test": "node --test", "check": "node --check public/app.js && node --check public/model.mjs && node --check server.mjs" },
+  "engines": { "node": ">=22" },
+  "license": "GPL-3.0-only"
+}
