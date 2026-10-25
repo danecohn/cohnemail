@@ -1,5 +1,14 @@
 # cohn.email · Golden Gate
 
+<!-- artemis-publisher:start -->
+<img src="brand/artemis/artemis-wordmark.svg" alt="Artemis Softworks LLC" width="340">
+
+**A product of Artemis Softworks LLC.** Founded by **Demetria Althea Cohn**.
+
+Companion software for macOS, thoughtfully available for Windows and Linux. See the [Artemis identity and design system](brand/artemis/BRAND.md). Platform availability varies by product and release.
+<!-- artemis-publisher:end -->
+
+
 A warm, Mac-inspired desktop for the Cohn family. Original Golden Gate wallpaper, glass windows, illustrated application icons, a dock, searchable Apple apps, favorites, and a family space for sharing shortcuts. Designed for desktop, tablet, and phone.
 
 ## Run locally
@@ -43,4 +52,4 @@ For Railway later: use this repository, the Dockerfile, and `/healthz`; attach `
 
 Original wallpaper: `public/assets/golden-gate.webp`, generated with the built-in image generation tool, then optimized to WebP. Prompt recorded in `ASSET-PROMPTS.md`. Icons are original SVG illustrations in `public/icons.mjs`; bridge mark is `public/assets/bridge.svg`.
 
-Created for the Cohn family by **Dane Cohn & AltStack**. Independent of Apple; product names identify their respective services. Source license: GPL-3.0, retained from the original repository.
+Created for the Cohn family by **Artemis Softworks LLC**. Independent of Apple; product names identify their respective services. Source license: GPL-3.0, retained from the original repository.
