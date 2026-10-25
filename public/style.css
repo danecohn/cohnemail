@@ -24,3 +24,6 @@
 @media(max-width:360px){.desktop{padding-inline:12px}.window-main{padding-inline:12px}.private-badge{display:none}.app-launch small{display:none}.favorite-button{right:-7px}}
 
 .appearance-swatch{background:linear-gradient(125deg,#81b7ff,#0875ed)}[data-appearance="twilight"] .appearance-swatch{background:linear-gradient(125deg,#184884,#102348)}@media(max-width:640px){.menubar button,.favorite-button{min-width:44px;min-height:44px}.favorite-button{top:-10px;right:-8px}}
+
+/* Keep secondary navigation and favorites readable on light dashboard surfaces. */
+.side-button{color:#62646b}.favorite-button{color:#6e7480}.favorite-button[aria-pressed=true]{color:#86623b}.mobile-filters button{color:#62646b}.mobile-filters button.active{color:#0055aa}.sidebar-bottom div>span{color:#62646b}
