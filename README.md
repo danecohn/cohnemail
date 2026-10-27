@@ -1,11 +1,11 @@
 # cohn.email · Golden Gate
 
 <!-- artemis-publisher:start -->
-<img src="brand/artemis/artemis-wordmark.svg" alt="Artemis Softworks LLC" width="340">
+<img src="public/assets/cohnsoft/logos/mark/cohnsoft-mark.svg" alt="Cohnsoft" width="340">
 
-**A product of Artemis Softworks LLC.** Founded by **Demetria Althea Cohn**.
+**A product of Cohnsoft.** Founded by **Demetria Althea Cohn**.
 
-Companion software for macOS, thoughtfully available for Windows and Linux. See the [Artemis identity and design system](brand/artemis/BRAND.md). Platform availability varies by product and release.
+Companion software for macOS, thoughtfully available for Windows and Linux. See the [Cohnsoft identity and design system](public/assets/cohnsoft/BRAND.md). Platform availability varies by product and release.
 <!-- artemis-publisher:end -->
 
 
@@ -52,4 +52,6 @@ For Railway later: use this repository, the Dockerfile, and `/healthz`; attach `
 
 Original wallpaper: `public/assets/golden-gate.webp`, generated with the built-in image generation tool, then optimized to WebP. Prompt recorded in `ASSET-PROMPTS.md`. Icons are original SVG illustrations in `public/icons.mjs`; bridge mark is `public/assets/bridge.svg`.
 
-Created for the Cohn family by **Artemis Softworks LLC**. Independent of Apple; product names identify their respective services. Source license: GPL-3.0, retained from the original repository.
+Created for the Cohn family by **Cohnsoft**. Independent of Apple; product names identify their respective services. Source license: GPL-3.0, retained from the original repository.
+
+Cohnsoft publisher assets/local fonts are copied unchanged from cohnsoftassets@752e894f90f1e58e62ae466352cb03c8bfd7d703; SHA-256 provenance is in `public/assets/cohnsoft/UPSTREAM.json`. The cohn.email family identity, Apple service names and existing locally stored preferences remain unchanged.
