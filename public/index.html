@@ -3,55 +3,59 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
-  <meta name="theme-color" content="#ece8df">
-  <meta name="description" content="A little closer, wherever you are. The Cohn family's home for mail, memories, and everyday things.">
-  <title>cohn.email — Welcome home</title>
-  <link rel="icon" href="/assets/bridge.svg" type="image/svg+xml">
-  <link rel="apple-touch-icon" href="/assets/touch-icon.png">
+  <meta name="theme-color" content="#f6f1f4" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#120a14" media="(prefers-color-scheme: dark)">
+  <meta name="description" content="Vigil Mail: a family start page for mail, calendars, photos and files on iCloud.">
+  <title>Vigil Mail</title>
+  <link rel="icon" href="/favicon.ico" sizes="any">
+  <link rel="icon" href="/favicon-32.png" type="image/png" sizes="32x32">
+  <link rel="icon" href="/favicon-16.png" type="image/png" sizes="16x16">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
   <link rel="manifest" href="/manifest.webmanifest">
-  <link rel="preload" href="/assets/golden-gate.webp" as="image">
+  <link rel="stylesheet" href="/assets/vigiltech/css/vigilsans.css">
+  <link rel="stylesheet" href="/assets/vigiltech/css/goldengate.css">
   <link rel="stylesheet" href="/style.css">
   <script type="module" src="/app.js"></script>
-<link rel="stylesheet" href="/assets/cohnsoft/css/cohnsans.css"></head>
-<body>
-  <div class="wallpaper" aria-hidden="true"></div>
+</head>
+<body class="vt">
+  <div class="wallpaper vt-wallpaper" aria-hidden="true"></div>
   <a class="skip-link" href="#window-content">Skip to apps</a>
   <header class="menubar">
-    <button class="brand" data-action="about" aria-label="About cohn.email"><img src="/assets/bridge.svg" alt="" width="24" height="24"><b>cohn<span>.email</span></b></button>
+    <button class="brand" data-action="about" aria-label="About Vigil Mail"><img src="/assets/vigil-mail-128.png" alt="" width="26" height="26"><b>Vigil <span>Mail</span></b></button>
     <nav class="desktop-menu" aria-label="Desktop menu">
       <button data-view="all">Apps</button><button data-view="family">Family</button><button data-action="settings">Appearance</button><button data-action="help">Help</button>
     </nav>
-    <div class="menu-status"><span class="edition">Moonrise</span><button data-action="search" aria-label="Search apps" title="Search apps (⌘ K)"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true"><circle cx="10.5" cy="10.5" r="6.5"/><path d="m16 16 5 5"/></svg></button><button data-action="settings" class="control-center" aria-label="Desktop settings"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><rect x="3" y="4" width="18" height="6" rx="3"/><rect x="3" y="14" width="18" height="6" rx="3"/><circle cx="8" cy="7" r="1.4"/><circle cx="16" cy="17" r="1.4"/></svg></button><time id="menu-time"></time></div>
+    <div class="menu-status"><button data-action="search" aria-label="Search apps" title="Search apps (⌘ K)"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true"><circle cx="10.5" cy="10.5" r="6.5"/><path d="m16 16 5 5"/></svg></button><button data-action="settings" class="control-center" aria-label="Desktop settings"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><rect x="3" y="4" width="18" height="6" rx="3"/><rect x="3" y="14" width="18" height="6" rx="3"/><circle cx="8" cy="7" r="1.4"/><circle cx="16" cy="17" r="1.4"/></svg></button><time id="menu-time"></time></div>
   </header>
   <main class="desktop">
-    <section class="greeting" aria-label="Welcome home"><p class="eyebrow"><span></span> THE COHN FAMILY DESKTOP</p><h1>A little closer.<br>Wherever you are.</h1><p class="greeting-sub" id="welcome-message">Your people. Your memories. Your everyday.</p></section>
+    <section class="greeting" aria-label="Welcome"><p class="eyebrow vt-star">Family start page</p><h1>Vigil Mail</h1><p class="greeting-sub" id="welcome-message">Mail, calendars and photos for the family.</p></section>
     <div class="desktop-layout">
-      <section class="app-window" id="app-window" aria-label="Family home">
+      <section class="app-window" id="app-window" aria-label="Home">
         <header class="window-toolbar">
           <div class="traffic-lights"><button class="traffic close" data-action="hide-window" aria-label="Close app window"></button><button class="traffic minimize" data-action="minimize" aria-label="Minimize app window"></button><button class="traffic maximize" data-action="maximize" aria-label="Expand app window"></button></div>
-          <div class="window-title"><img src="/assets/bridge.svg" width="18" height="18" alt=""><b>Family home</b></div>
-          <button class="window-search" data-action="search" aria-label="Find an app"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true"><circle cx="10.5" cy="10.5" r="6.5"/><path d="m16 16 5 5"/></svg><span>Find an app</span><kbd>⌘ K</kbd></button>
+          <div class="window-title"><img src="/assets/vigil-mail-128.png" width="20" height="20" alt=""><b>Home</b></div>
+          <button class="window-search" data-action="search" aria-label="Find an app"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true"><circle cx="10.5" cy="10.5" r="6.5"/><path d="m16 16 5 5"/></svg><span>Find an app</span><kbd>⌘K</kbd></button>
         </header>
         <div class="window-body">
-          <aside class="sidebar"><p class="sidebar-heading">YOUR HOME</p><nav aria-label="Application categories" id="sidebar-nav"></nav><div class="sidebar-bottom"><div class="family-avatar">C</div><div><strong>The Cohns</strong><span>A place for all of us.</span></div><button data-action="settings" aria-label="Personalize your desktop">⌘</button></div></aside>
+          <aside class="sidebar"><p class="sidebar-heading">Home</p><nav aria-label="Application categories" id="sidebar-nav"></nav><div class="sidebar-bottom"><div class="family-avatar vt-lancet">V</div><div><strong>Family</strong><span>Shared on this device</span></div><button data-action="settings" aria-label="Personalize your desktop">⌘</button></div></aside>
           <div class="window-main" id="window-content" tabindex="-1"><div id="view-content"></div></div>
         </div>
-        <footer class="window-status"><span id="view-status">12 apps · A familiar place to begin</span><span class="private-badge"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" aria-hidden="true"><rect x="4" y="7" width="8" height="7" rx="2"/><path d="M5.5 7V4.5a2.5 2.5 0 0 1 5 0V7"/></svg> Yours, by design</span></footer>
+        <footer class="window-status"><span id="view-status">12 apps</span><span class="private-badge"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" aria-hidden="true"><rect x="4" y="7" width="8" height="7" rx="2"/><path d="M5.5 7V4.5a2.5 2.5 0 0 1 5 0V7"/></svg> Private to this device</span></footer>
       </section>
       <aside class="widgets" aria-label="Desktop widgets">
-        <section class="date-widget glass"><div class="widget-label"><span>TODAY, AT HOME</span><span class="tiny-sun" aria-hidden="true">☼</span></div><div class="date-line"><span id="date-number"></span><div><b id="date-day"></b><span id="date-month"></span></div></div><div class="week-strip" id="week-strip" aria-label="Current week"></div><a href="https://www.icloud.com/calendar/" target="_blank" rel="noopener noreferrer" class="widget-link" data-external>Open Calendar <span>↗</span></a></section>
-        <section class="note-widget glass"><div class="widget-label"><label for="personal-note">A LITTLE NOTE</label><span aria-hidden="true">✎</span></div><textarea id="personal-note" maxlength="2000" placeholder="Something to remember. Something to look forward to…" aria-describedby="note-hint"></textarea><p id="note-hint">Just for you, saved on this device.<span id="note-saved" role="status"></span></p></section>
-        <button class="family-shortcut" data-view="family"><span class="folder-mini" aria-hidden="true"></span><span><b>Our family space</b><small>Shared moments start here</small></span><span aria-hidden="true">↗</span></button>
+        <section class="date-widget glass"><div class="widget-label"><span>Today</span><span class="tiny-sun" aria-hidden="true">☼</span></div><div class="date-line"><span id="date-number"></span><div><b id="date-day"></b><span id="date-month"></span></div></div><div class="week-strip" id="week-strip" aria-label="Current week"></div><a href="https://www.icloud.com/calendar/" target="_blank" rel="noopener noreferrer" class="widget-link" data-external>Open Calendar <span>↗</span></a></section>
+        <section class="note-widget glass"><div class="widget-label"><label for="personal-note">Note</label><span aria-hidden="true">✎</span></div><textarea id="personal-note" maxlength="2000" placeholder="Write a note for yourself" aria-describedby="note-hint"></textarea><p id="note-hint">Saved on this device.<span id="note-saved" role="status"></span></p></section>
+        <button class="family-shortcut" data-view="family"><span class="folder-mini" aria-hidden="true"></span><span><b>Family space</b><small>Shared links and albums</small></span><span aria-hidden="true">↗</span></button>
       </aside>
     </div>
-    <button id="restore-window" class="restore-window glass" data-action="restore" hidden><img src="/assets/bridge.svg" alt="" width="36" height="36"><span>Open family home</span><span aria-hidden="true">↗</span></button>
-    <footer class="desktop-footer"><span><span class="footer-dot"></span> A small corner of the internet. All ours.</span><button data-action="about">cohn.email <span>· Moonrise</span></button></footer>
+    <button id="restore-window" class="restore-window glass" data-action="restore" hidden><img src="/assets/vigil-mail-128.png" alt="" width="36" height="36"><span>Open home</span><span aria-hidden="true">↗</span></button>
+    <footer class="desktop-footer"><span><span class="footer-dot"></span> A product of VigilTech, vigiltech.org.</span><button data-action="about">About Vigil Mail</button></footer>
   </main>
-  <footer class="dock-shell"><nav id="dock" aria-label="Application dock"></nav><div class="dock-caption">MAKE YOURSELF AT HOME</div></footer>
+  <footer class="dock-shell"><nav id="dock" aria-label="Application dock"></nav></footer>
   <nav class="mobile-nav" aria-label="Mobile navigation"><button data-view="all"><span aria-hidden="true">▦</span>Apps</button><button data-view="family"><span aria-hidden="true">♧</span>Family</button><button data-action="search"><span aria-hidden="true">⌕</span>Search</button><button data-action="settings"><span aria-hidden="true">☷</span>Settings</button></nav>
-  <dialog id="spotlight" class="spotlight" aria-label="Find an app or family shortcut"><form method="dialog" class="search-top"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="10.5" cy="10.5" r="6.5"/><path d="m16 16 5 5"/></svg><input id="app-search" type="search" placeholder="Where would you like to go?" aria-label="Search apps and family links" autocomplete="off"><button aria-label="Close app search">esc</button></form><div class="search-meta">APPS & FAMILY SHORTCUTS</div><div id="search-results" class="search-results"></div><div class="search-footer"><span>↑ ↓ to explore</span><span>↵ to open</span><span>Apple apps open in a new tab</span></div></dialog>
+  <dialog id="spotlight" class="spotlight" aria-label="Find an app or family shortcut"><form method="dialog" class="search-top"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="10.5" cy="10.5" r="6.5"/><path d="m16 16 5 5"/></svg><input id="app-search" type="search" placeholder="Find an app or shortcut" aria-label="Search apps and family links" autocomplete="off"><button aria-label="Close app search">esc</button></form><div class="search-meta">Apps and family shortcuts</div><div id="search-results" class="search-results"></div><div class="search-footer"><span>↑ ↓ to explore</span><span>↵ to open</span><span>Apple apps open in a new tab</span></div></dialog>
   <dialog id="panel" class="panel" aria-labelledby="panel-title"><header class="panel-header"><h2 id="panel-title"></h2><button id="panel-close" aria-label="Close dialog">×</button></header><div id="panel-content"></div></dialog>
   <div id="toast" class="toast" role="status"></div>
-  <noscript><p class="noscript">Welcome to cohn.email. Enable JavaScript for the family desktop, or <a href="https://www.icloud.com/">open iCloud directly</a>.</p></noscript>
+  <noscript><p class="noscript">Vigil Mail needs JavaScript. You can also <a href="https://www.icloud.com/">open iCloud directly</a>.</p></noscript>
 </body>
 </html>

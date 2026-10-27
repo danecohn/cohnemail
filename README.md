@@ -1,15 +1,10 @@
-# cohn.email · Golden Gate
+# Vigil Mail
 
-<!-- artemis-publisher:start -->
-<img src="public/assets/cohnsoft/logos/mark/cohnsoft-mark.svg" alt="Cohnsoft" width="340">
+<img src="public/assets/vigil-mail-256.png" alt="Vigil Mail" width="128">
 
-**A product of Cohnsoft.** Founded by **Demetria Althea Cohn**.
+**A product of VigilTech, vigiltech.org.** VigilTech was founded by Demetria Althea Cohn.
 
-Companion software for macOS, thoughtfully available for Windows and Linux. See the [Cohnsoft identity and design system](public/assets/cohnsoft/BRAND.md). Platform availability varies by product and release.
-<!-- artemis-publisher:end -->
-
-
-A warm, Mac-inspired desktop for the Cohn family. Original Golden Gate wallpaper, glass windows, illustrated application icons, a dock, searchable Apple apps, favorites, and a family space for sharing shortcuts. Designed for desktop, tablet, and phone.
+Vigil Mail is a family start page for iCloud: one place to open Mail, Calendar, Photos, iCloud Drive, Notes and the rest, with shortcuts to shared albums and calendars. It runs at cohn.email. Dark by default on dark systems, with a light "Dawn" theme. Design system: [VigilTech](public/assets/vigiltech/) (Golden Gate, Vigil Sans).
 
 ## Run locally
 
@@ -29,10 +24,10 @@ Or run `node server.mjs` directly. `PORT` overrides the default port.
 - Twelve direct Apple/iCloud app links: Mail, Calendar, Photos, iCloud Drive, Notes, Reminders, Contacts, Find Devices, Pages, Numbers, Keynote, and iCloud.
 - Illustrated icons and desktop dock. Close, minimize, expand, and restore the launcher window.
 - Search with Command-K / Ctrl-K; arrow keys to explore and Enter to open.
-- Starred favorites, personal welcome message, Golden Hour / Coastal Dusk appearances, and a device-local note.
+- Starred favorites, personal welcome message, Dawn / Night themes (follows the system until you choose), and a device-local note.
 - Family space with device-local HTTPS shortcuts to shared iCloud albums, calendars, notes, folders, and other family destinations. Add/remove with confirmation.
 - Touch layout with a three-column app grid, bottom navigation, safe-area padding, readable form controls, and reduced-motion support.
-- Add to Home Screen metadata and original bridge icon.
+- Add to Home Screen metadata and the Vigil Mail icon.
 
 ## Accounts, family access, and privacy
 
@@ -50,8 +45,6 @@ For Railway later: use this repository, the Dockerfile, and `/healthz`; attach `
 
 ## Assets and credits
 
-Original wallpaper: `public/assets/golden-gate.webp`, generated with the built-in image generation tool, then optimized to WebP. Prompt recorded in `ASSET-PROMPTS.md`. Icons are original SVG illustrations in `public/icons.mjs`; bridge mark is `public/assets/bridge.svg`.
+Icons: the Vigil Mail icon kit (`public/*.png`, `favicon.ico`, `public/assets/vigil-mail-*.png`). The wallpaper is drawn in CSS by the VigilTech design system, so there is no image to load. The twelve iCloud app icons are original SVG illustrations in `public/icons.mjs`. Typeface: Vigil Sans (SIL OFL 1.1, `public/assets/vigiltech/fonts/OFL.txt`).
 
-Created for the Cohn family by **Cohnsoft**. Independent of Apple; product names identify their respective services. Source license: GPL-3.0, retained from the original repository.
-
-Cohnsoft publisher assets/local fonts are copied unchanged from cohnsoftassets@752e894f90f1e58e62ae466352cb03c8bfd7d703; SHA-256 provenance is in `public/assets/cohnsoft/UPSTREAM.json`. The cohn.email family identity, Apple service names and existing locally stored preferences remain unchanged.
+Independent of Apple; product names identify their respective services. Source license: GPL-3.0.

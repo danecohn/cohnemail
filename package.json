@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "private": true,
   "type": "module",
-  "description": "The Cohn family's Golden Gate desktop on the web",
+  "description": "Vigil Mail: a family start page for iCloud mail, calendars, photos and files",
   "scripts": {
     "start": "node server.mjs",
     "dev": "node --watch server.mjs",
@@ -14,5 +14,5 @@
     "node": ">=22"
   },
   "license": "GPL-3.0-only",
-  "author": "Cohnsoft"
+  "author": "VigilTech"
 }

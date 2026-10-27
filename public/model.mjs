@@ -1,18 +1,18 @@
 export const APPS = [
-  {id:'mail', name:'Mail', subtitle:'A little hello', group:'everyday', url:'https://www.icloud.com/mail/', keywords:'email inbox letter'},
-  {id:'calendar', name:'Calendar', subtitle:'Make time together', group:'everyday', url:'https://www.icloud.com/calendar/', keywords:'events dates plans schedule'},
-  {id:'photos', name:'Photos', subtitle:'Keep the good bits', group:'everyday', url:'https://www.icloud.com/photos/', keywords:'pictures albums memories'},
-  {id:'drive', name:'iCloud Drive', subtitle:'Everything, in reach', group:'everyday', url:'https://www.icloud.com/iclouddrive/', keywords:'files folders documents storage'},
-  {id:'notes', name:'Notes', subtitle:'Catch a thought', group:'everyday', url:'https://www.icloud.com/notes/', keywords:'write list ideas'},
-  {id:'reminders', name:'Reminders', subtitle:'One less thing to forget', group:'everyday', url:'https://www.icloud.com/reminders/', keywords:'tasks todo shopping groceries'},
-  {id:'contacts', name:'Contacts', subtitle:'Your favorite people', group:'everyday', url:'https://www.icloud.com/contacts/', keywords:'address book phone people'},
-  {id:'find', name:'Find Devices', subtitle:'A little peace of mind', group:'everyday', url:'https://www.icloud.com/find/', keywords:'find my lost iphone ipad mac'},
-  {id:'pages', name:'Pages', subtitle:'Put it into words', group:'create', url:'https://www.icloud.com/pages/', keywords:'documents write word'},
-  {id:'numbers', name:'Numbers', subtitle:'Make it all add up', group:'create', url:'https://www.icloud.com/numbers/', keywords:'spreadsheet budget excel'},
-  {id:'keynote', name:'Keynote', subtitle:'Share a bright idea', group:'create', url:'https://www.icloud.com/keynote/', keywords:'presentation slides powerpoint'},
-  {id:'icloud', name:'iCloud', subtitle:'Your Apple home', group:'everyday', url:'https://www.icloud.com/', keywords:'account apple home settings'}
+  {id:'mail', name:'Mail', subtitle:'Email', group:'everyday', url:'https://www.icloud.com/mail/', keywords:'email inbox letter'},
+  {id:'calendar', name:'Calendar', subtitle:'Events and plans', group:'everyday', url:'https://www.icloud.com/calendar/', keywords:'events dates plans schedule'},
+  {id:'photos', name:'Photos', subtitle:'Photos and albums', group:'everyday', url:'https://www.icloud.com/photos/', keywords:'pictures albums memories'},
+  {id:'drive', name:'iCloud Drive', subtitle:'Files and folders', group:'everyday', url:'https://www.icloud.com/iclouddrive/', keywords:'files folders documents storage'},
+  {id:'notes', name:'Notes', subtitle:'Notes', group:'everyday', url:'https://www.icloud.com/notes/', keywords:'write list ideas'},
+  {id:'reminders', name:'Reminders', subtitle:'Tasks and lists', group:'everyday', url:'https://www.icloud.com/reminders/', keywords:'tasks todo shopping groceries'},
+  {id:'contacts', name:'Contacts', subtitle:'Address book', group:'everyday', url:'https://www.icloud.com/contacts/', keywords:'address book phone people'},
+  {id:'find', name:'Find Devices', subtitle:'Locate devices', group:'everyday', url:'https://www.icloud.com/find/', keywords:'find my lost iphone ipad mac'},
+  {id:'pages', name:'Pages', subtitle:'Documents', group:'create', url:'https://www.icloud.com/pages/', keywords:'documents write word'},
+  {id:'numbers', name:'Numbers', subtitle:'Spreadsheets', group:'create', url:'https://www.icloud.com/numbers/', keywords:'spreadsheet budget excel'},
+  {id:'keynote', name:'Keynote', subtitle:'Presentations', group:'create', url:'https://www.icloud.com/keynote/', keywords:'presentation slides powerpoint'},
+  {id:'icloud', name:'iCloud', subtitle:'Account and settings', group:'everyday', url:'https://www.icloud.com/', keywords:'account apple home settings'}
 ];
-export const DEFAULTS={favorites:['mail','calendar','photos','drive'], appearance:'sunrise', newTab:true, name:'', message:'Your people. Your memories. Your everyday.', note:'', links:[]};
+export const DEFAULTS={favorites:['mail','calendar','photos','drive'], appearance:'sunrise', newTab:true, name:'', message:'Mail, calendars and photos for the family.', note:'', links:[]};
 export function safeUrl(value){try{const url=new URL(value);if(url.protocol!=='https:'||url.username||url.password)return null;return url.href;}catch{return null;}}
 export function normalizeState(input){
   if(!input||typeof input!=='object'||Array.isArray(input))return structuredClone(DEFAULTS);
