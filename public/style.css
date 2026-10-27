@@ -27,3 +27,6 @@
 
 /* Keep secondary navigation and favorites readable on light dashboard surfaces. */
 .side-button{color:#62646b}.favorite-button{color:#6e7480}.favorite-button[aria-pressed=true]{color:#86623b}.mobile-filters button{color:#62646b}.mobile-filters button.active{color:#0055aa}.sidebar-bottom div>span{color:#62646b}
+
+/* Cohnsoft local typography; family identity and Apple destinations remain intact. */
+body,button,input,select,textarea{font-family:"Cohn Sans",-apple-system,BlinkMacSystemFont,system-ui,sans-serif}
